@@ -1,0 +1,340 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Menu start*/
+header {
+	width: 100%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	margin-left: 5px
+	
+}
+
+ul {
+	list-style: none;
+	margin-right: 80px
+}
+
+li {
+	display: inline-block;
+	float: left;
+	padding: 10px;
+	
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	
+}
+
+a:hover {
+	text-decoration: underline;
+}
+a.selected{
+	border: thin;
+	text-decoration: underline;
+}
+a.selected2{
+	border: thin;
+	text-decoration: underline;
+}
+a.selected3{
+	border: thin;
+	text-decoration: underline;
+}
+
+
+nav {
+	float: right;
+	padding: 20px;
+	font-family: verdana;
+	font-weight: bold;
+}
+/*Menu slut*/
+
+/*Forside start*/
+#forside{
+	background: url(portfoliobillede.png) center no-repeat;
+	background-size: 80%;
+	margin-top: 700px;
+	background-attachment: fixed;
+}
+/*Profil start*/
+#profil{
+	background: url(profil.png) right no-repeat ;
+	background-size: 50%;
+	margin-top: 40px;
+	margin-right: 0px;
+	margin-left: 100px;
+	background-attachment: fixed;
+	margin: 70px;
+	background-position: right;
+	padding: 50px 10px 10px 10px;
+	display: flex;
+}
+/*overskrift*/
+#om{
+	font-size: 30px;
+	text-align: left;
+	margin-top: 15px;
+}
+
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: 10px;
+	margin-right: auto;
+	width: 500px;
+	margin-top: 10px;
+	padding: 10px 10px 10px 10px;
+}
+.mig{
+	color: black;
+	text-align: left;
+    font-family: verdana;
+	padding: 10px 10px 10px 10px;
+	font-size: 13px;
+	margin-top: 0px;
+	width: 500px;
+		
+	}
+.email img{
+	float: left;
+	margin-top: 20px;
+}
+.email img:hover{
+	opacity: 1;
+}
+.facebook img{
+	float: left;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+.linkedin img{
+	float: left;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+.cv img{
+	float: left;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+	
+#footer{
+	float: left;
+	margin-left: auto;
+
+}
+/*profil slut*/
+
+/*Projekter start*/
+#projekter{
+	background: url(watercolor.jpg) right no-repeat;
+	background-size: 90%;
+}
+h2{
+	text-align: center;
+	font-family: verdana;
+	margin-top: 100px;
+	font-size: 50px;
+}
+
+.billeder{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	margin-top: 100px;
+}
+
+.textoverimage{
+	position: relative;
+	width: 200px;
+	height: 220px;
+	float: left;
+	margin: 4px;
+	background-size: 100%;
+	transition: 0.5s;
+	background-position: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-family: verdana;
+	text-align: left;
+	font-size: 10px;
+	}
+.textoverimage:hover{
+	background-size: 110;
+	box-shadow: 0 0 15px #483345;
+		
+		
+	}
+.textoverimage:after{
+	position: absolute;
+	top:70%;
+	bottom: 0;
+	left:0;
+	right: 0;
+	white-space: pre-wrap;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 0 8px;
+	opacity: 0;
+	content:attr(data-text);
+	transition: 0.5s;
+		
+	}
+.textoverimage:hover:after{
+	opacity: 1;
+	top: 0;
+	padding: 8px;
+	}
+.textoverimage:first-line{
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: left;
+	font-size: 15px;
+	}
+.textoverimage2{
+	position: relative;
+	width: 300px;
+	height: 220px;
+	float: left;
+	margin: 4px;
+	background-size: 100%;
+	transition: 0.5s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	font-family: verdana;
+	text-align: left;
+	font-size: 10px;
+	background-repeat: no-repeat;
+	
+		
+}
+.textoverimage2:hover{
+	background-size: 110;
+	box-shadow: 0 0 15px #483345;
+}
+.textoverimage2:after{
+	position: absolute;
+	top:70%;
+	bottom: 0;
+	left:0;
+	right: 0;
+	white-space: pre-wrap;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 0 8px;
+	opacity: 0;
+	content:attr(data-text);
+	transition: 0.5s;
+		
+}
+.textoverimage2:hover:after{
+	opacity: 1;
+	top: 0;
+	padding: 8px;
+}
+.textoverimage2:first-line{
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: left;
+	font-size: 15px;
+}
+/*projekter slut*/
+
+/*kontakt start*/
+#kontakt{
+	background: url(smokekontakt.png) left no-repeat;
+	background-size: 55%;
+	margin-top: 50px;
+	margin-right: 0px;
+	margin-left: 100px;
+	background-attachment: fixed;
+	margin: 70px;
+	background-position: left;
+	padding: 50px 10px 10px 10px;
+	display: flex;
+}
+/*kontakt boks*/
+input[type=text], select, textarea {
+    width: 400%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #775a73;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker purple color */
+input[type=submit]:hover {
+    background-color: #483345;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+p{
+	line-height: 25px;
+}
+/*Social media*/
+#footer2{
+	float: right;
+	
+}
+.email2 img{
+	float: right;
+	margin-top: 350px;
+}
+
+.facebook2 img{
+	float: right;
+	margin-top: 350px;
+	margin-left: 25px;
+	margin-right: 	
+}
+
+.linkedin2 img{
+	float: right;
+	margin-top: 350px;
+	margin-left: 25px;
+}
+.cv2 img{
+	float: right;
+	margin-top: 350px;
+	margin-left: 25px;
+	margin-right: 55px
+	
+}
+	
+
+
+
+
+
+
+	
+
